@@ -6,18 +6,8 @@ module.exports = {
     },
     globals: {
         'ts-jest': {
-            diagnostics: false
+            diagnostics: false,
+            pathRegex: /\.(spec|test)\.ts$/
         }
     },
-    overrides: [
-        Object.assign(
-            {
-                files: ['**/*.test.js'],
-                env: {jest: true},
-                plugins: ['jest'],
-            },
-            require('eslint-plugin-jest').configs.recommended
-        )
-    ]
-
 };

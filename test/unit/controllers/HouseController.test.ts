@@ -1,5 +1,5 @@
 import * as express from 'express';
-import {ComplexityController} from '../../../src/controllers/UserController';
+import {HouseController} from '../../../src/controllers/HouseController';
 
 describe('test the UserController', () => {
 
@@ -13,8 +13,8 @@ describe('test the UserController', () => {
     });
 
     it('should configure the routes paths /users and /users/:id', () => {
-        const userController = new ComplexityController();
-        expect(routeSpy).toHaveBeenNthCalledWith(1, '/users');
-        expect(routeSpy).toHaveBeenNthCalledWith(2, '/users/:id');
+        const houseController = new HouseController();
+        expect(routeSpy).toHaveBeenNthCalledWith(1, '/houses');
+        expect(routeSpy).toHaveBeenNthCalledWith(2, '/houses/:id([0-9]+)');
     });
 });
