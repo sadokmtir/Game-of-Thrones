@@ -21,5 +21,3 @@ on the actual typescript file (it has a nice source map support).
 * There is a basic validation in place for the `isAlive` flag.
 * There is a docker multi-stage building for the container in different environments.
 
-#### PS: Please at the end give some technical feedback to this solution, as I invested my private time on it, I would like to get valuable feedback for my code/solution, Thanks !                                
-
